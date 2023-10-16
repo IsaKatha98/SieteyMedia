@@ -18,14 +18,18 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textSize="20dp"
             android:text="Me planto" />
+
 
         <Button
             android:id="@+id/cartaJ2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textSize="20dp"
             android:text="Una carta" />
+
 
     </LinearLayout>
 
@@ -50,6 +54,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Jug2"
+                android:textSize="24dp"
+                android:gravity="center_vertical"
                 />
 
             <TextView
@@ -57,16 +63,39 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:textSize="24dp"
                 android:inputType="numberDecimal"
-                android:text="TextView" />
+                android:gravity="center"
+                android:text="0.0" />
+
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/puntosTotalJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:inputType="number"
+            android:textSize="20dp"/>
 
         <TextView
             android:id="@+id/turno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textSize="24dp"
+            android:gravity="center"
             android:text="Ganador" />
+
+        <TextView
+            android:id="@+id/puntosTotalJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:inputType="number"
+            android:textSize="20dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -78,9 +107,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center"
-                android:rotationX="0"
-                android:rotationY="0"
+                android:gravity="center_vertical"
+                android:textSize="24dp"
                 android:text="jug1"/>
 
             <TextView
@@ -89,6 +117,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:inputType="numberDecimal"
+                android:textSize="24dp"
+                android:gravity="center"
                 android:text="0.0" />
 
         </LinearLayout>
@@ -106,18 +136,24 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Una carta" />
+            android:textSize="20dp"
+            android:text="Una carta"
+            android:visibility="visible"/>
+
 
         <Button
             android:id="@+id/plantarseJ1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Me planto" />
+            android:textSize="20dp"
+            android:text="Me planto"
+            android:visibility="visible"/>
+
+
 
     </LinearLayout>
 
 
 
 </LinearLayout>
-
