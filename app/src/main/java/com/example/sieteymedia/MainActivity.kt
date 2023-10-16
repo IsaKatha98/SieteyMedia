@@ -2,6 +2,7 @@ package com.example.sieteymedia
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.example.sieteymedia.databinding.JuegoBinding
 import com.example.sieteymedia.databinding.NombresBinding
@@ -30,29 +31,29 @@ class MainActivity : AppCompatActivity() {
         setContentView(primera.root)
 
         //Asociamos los nombres.
-        var nombJ1=primera.nombreJ1.text.toString()
-        var nombJ2=primera.nombreJ2.text.toString()
+        nomJ1 = primera.nombreJ1.text.toString()
+        nomJ2 = primera.nombreJ2.text.toString()
+        Log.i("actividad", "Nombre jug1: $nomJ1")
 
-        //Hacemos un binding para el boton de inicio.
-        var boton= primera.button
 
         //Cuando pulsamos el botón
-        boton.setOnClickListener() {
+        primera.button.setOnClickListener() {
 
             //si alguno de los nombres está vacío aparece un mensaje.
-          //  if (nomJ1.isEmpty()||nomJ2.isEmpty()) {
+            if (nomJ1.isEmpty()||nomJ2.isEmpty()) {
 
-              //  val toast=
+
                     Toast.makeText(applicationContext, "Ambos jugadores deben tener nombre", Toast.LENGTH_LONG)
                         .show()
 
-           // } else {
+            } else {
+                //Lamamos a la función juego.
+                juego()
+                Toast.makeText(applicationContext, "gola gisa", Toast.LENGTH_LONG)
+                    .show()
+            }
 
 
-            //}
-
-            //Lamamos a la función juego.
-            juego()
         }
 
     }
